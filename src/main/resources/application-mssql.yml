@@ -1,0 +1,9 @@
+application:
+  database:
+    server: 192.168.7.178
+    port: 1433
+    user: ${mssqlUser}
+    password: ${mssqlPassword}
+    name: bills
+    type: sqlserver
+    customConnectionString: "encrypt=true;databaseName=${application.database.name};trustServerCertificate=true;useUTC=true;"

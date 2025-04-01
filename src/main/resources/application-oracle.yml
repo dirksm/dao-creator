@@ -1,0 +1,13 @@
+application:
+  database:
+    server: 192.168.7.178
+    port: 1521
+    user: ${oracleUser}
+    password: ${oraclePassword}
+    name: XEPDB1
+    type: oracle:thin
+    customConnectionString:
+    tables:
+    - EMPLOYEES
+  generator:
+    allTables: false

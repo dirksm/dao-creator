@@ -1,0 +1,26 @@
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.maddog.dao.creator: INFO
+
+spring:
+  application:
+    name: dao-creator
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+application:
+  database:
+    server: 192.168.7.176
+    port: 3306
+    user: ${mysqlUser}
+    password: ${mysqlPassword}
+    name: bills
+    type: mysql
+    customConnectionString: "?characterEncoding=utf8&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false"
+  generator:
+    basepackage: com.maddog.dao.creator
+    spacing: 2
+    classPrefix: Bills
+    allTables: true
