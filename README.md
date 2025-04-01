@@ -91,6 +91,8 @@ This is how the generated folder structure looks (based on the provided attribut
 
         Each account corresponds to one of the application.yml files and may change based on your database preference.
 
+        
+
 3. Build the project using Gradle:
     ```bash
     ./gradlew build
